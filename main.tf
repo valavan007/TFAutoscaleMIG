@@ -9,6 +9,7 @@ variable "network_name" {
 
 provider "google" {
   project     = "tf-admin-project-225303"
+  region      = "${var.region}"
 }
 
 resource "google_compute_network" "default" {
